@@ -1,0 +1,25 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "~bootstrap/scss/bootstrap";
+
+button {
+    width: 300px;
+    min-width: 200px;
+    padding: 2px;
+    border-radius: 10px;
+    background-color: #3097D1;
+    background-image: linear-gradient(45deg, #40b9ff, #3097D1, #40b9ff);
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    border: none;
+    transition: 500ms ease;
+    filter: drop-shadow(2px 2px 4px #888);
+}
+
+button:hover {}
