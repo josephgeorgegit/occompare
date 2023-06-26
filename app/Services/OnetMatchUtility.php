@@ -71,6 +71,12 @@ class OnetMatchUtility {
         
         $final_score = 100 - ($total_sum / $skills_length);
 
+        /**
+         * In the rare event final score is negative we return 0.
+         */
+        if($final_score < 0){
+            $final_score = 0;
+        }
         return $final_score;
     }
 }
